@@ -1,0 +1,87 @@
+body{
+    height: 100vh;
+    background: rgb(236, 232, 232);
+}
+.part1{
+    float: inline-start;
+    float: left;
+    width: 25%;
+    /* height: 100%; */
+    margin-left: 18%;
+    margin-top: 5%;
+    
+}
+.part1 input{
+    width: 60%;
+    height: 25px;
+    font-size: 17px;
+    margin-bottom: 5%;
+}
+.part2{
+    float: inline-start;
+    float: left;
+    width: 40%;
+    margin-top: 5%;
+}
+.part2 textarea{
+    width: 543px;
+height: 336px;
+font-size: 17px;
+
+}
+.part1 textarea{
+    width: 196px;
+height: 101px;
+font-size: 14px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    font-size: 15px;
+    width: 50%;
+    height: 32px;
+    background: rgb(10, 10, 240);
+    color: white;
+    margin-top: 2%;
+}
+@media(max-width:1000px){
+    .part1 ,.part2{
+        float: none;
+    }
+    .part1{
+        margin-left: 40%;
+        /* width: 65%; */
+    }
+    .part2{
+        margin-left: 22%;
+    }
+    .part1 input{
+        width: 80%;
+    }
+    button{
+        width: 75%;
+        margin-left: 60%;
+    }
+}
+@media(max-width:800px){
+    .part2{
+        margin-left: 13%;
+    }
+}
+@media(max-width:650px){
+    .part1{
+        width: 75%;
+    }
+    .part2{
+        margin-left:10px;
+    }
+    .part1 input{
+        width: 45%;
+    }
+    button{
+        width:95%;
+        margin-left: 70%;
+    }
+}

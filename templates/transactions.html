@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneytracker</title>
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link rel="stylesheet" href="{% static 'trans.css' %}">
+    <script src="{% static 'transactions.js' %}"></script>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label> 
+    <label class="logo">Moneytracker</label>
+    <ul>
+      <li><a href="friends">Friends</a></li>
+      <li><a href="transactions">transactions</a></li>
+      <li><a href="/">Accounts</a></li>
+      <li><a href="logout">Logout</a></li>
+      
+    </ul>
+  </nav>
+
+  <div id="frm" class="transform">
+    <h3 id="msgbxx"></h3>
+    <label class="nlable">Amount:</label>
+      <input id="amount" class="user_name" type="text" placeholder="Amount">
+    <label class="nlable">Spending Category:</label>
+    <input id="spnd" class="user_name" type="text" placeholder="Spendin_category">
+
+    <label for="lang">Payment Partners(Friends)</label>
+      <select name="languages" id="lang" multiple>
+      </select>
+      <label for="lang">Payer(Please select only one)</label>
+      <select name="languages" id="pay" multiple>
+    </select>
+    <button type="button" id="transsubmit" onclick="createtrans()">Submit</button>
+    <button type="button" onclick="showtransactions()">Transaction history</button>
+  </div>
+  
+  <div style="overflow-x:auto;" id="main_div">
+    <table id="transtable">
+      <tr>
+        <th>Transaction id</th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>Users(Included in payment)</th>
+        <th>Payed by</th>
+        <th>Spending Category</th>
+         <th>Update</th>
+         <th>Delete</th>
+      </tr>
+     
+      
+      
+    </table>
+    <button id="trsnbtn" onclick="opencreateform()">Create Transaction</button>
+  </div> 
+
+</body>
+
+</html> 

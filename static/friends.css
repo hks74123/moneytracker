@@ -1,0 +1,113 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+.transform{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .transform input{
+    width: 70%;
+    height: 8px;
+    font-size: 18px;
+    /* margin-top: 4%; */
+    border-radius: 5px;
+    border: 1px solid #cbcdcf;
+    padding: 14px 16px; 
+    margin-top: 3px;
+  }
+  .transform label{
+    display: block;
+    margin-top: 10px;
+  }
+
+  .transform select{
+    margin-left: 10%;
+    min-width: 20%;
+    margin-top: 10px;
+
+  }
+
+  .transform button{
+    display: block;
+    background: #007bff;
+    color: white;
+    width: 15%;
+    height: 40px;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #transtable button{
+    display: inline-block;
+    background: red;
+    color: white;
+    height: 20px;
+    margin: auto;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  #trsnbtn{
+    display: block;
+    background: #007bff;
+    color: white;
+    width: 15%;
+    height: 40px;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  #userstable{
+    display: none;
+  }
+
+  #userstable button{
+    display: inline-block;
+    background: red;
+    color: white;
+    height: 20px;
+    margin: auto;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  #friend_req{
+    display: none;
+  }
+
+  #requests{
+    display: block;
+    background: #007bff;
+    color: white;
+    width: 15%;
+    height: 40px;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  

@@ -1,0 +1,71 @@
+body{
+    background: rgb(236, 232, 232);
+}
+
+body p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 7%;
+}
+.dabba{
+    width: 45%;
+    margin: auto;
+    background: white;
+    border: 1.5px solid lightgreen;
+    margin-top: 30px;
+}
+.form-control{
+    width: 66%;
+    display: block;
+    margin-left: 11%;
+    background: white;
+    margin-top: 25px;
+    font-size: 17px;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.dabba input{
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+.name{
+    width: 30%;
+    margin-left: 11%;
+}
+.user_name,.Email,.pass{
+    width: 65%;
+    margin-left: 11%;
+}
+.dabba button{
+    height: 35px;
+    width: 25%;
+    font-size: 17px;
+    background: rgb(17, 129, 194);
+    color: white;
+    cursor: pointer;
+    margin-left: 37%;
+    margin-top: 8px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+#upload-button{
+    display: block;
+}
+#upload-name{
+    margin-left: 20% !important ;
+}

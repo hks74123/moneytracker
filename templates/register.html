@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+</head>
+<body>
+    <h3 id="msgbx" style="text-align: center;margin-top: 20px;"></h3>
+    <p>Welcome to Money Tracker please fill out these details to proceed!!</p>
+    <form action="register" method="POST" onsubmit="return false;">
+        {% csrf_token %}
+        <div class="dabba">
+            <input class="name" type="text" id="f_name" placeholder="First Name">
+            <input class="name" type="text" id="l_name" placeholder="Last Name">
+            <input class="user_name" type="text" id="u_name" placeholder="Username">
+            <input class="Email" type="email" id="mmail" placeholder="Email">
+            <input class="pass" type="password" id="pass" placeholder="Password">
+            <input class="pass" type="password" id="pass1" placeholder="Password again">
+            <button type="button" id="Rgstr">Register</button>
+            <button class="buttonload" id="loadin_btn" style="display: none;">
+                <i class="fa fa-refresh fa-spin"></i>Verifying...
+              </button> 
+        </div>
+    </form>
+    {% for message in messages %}
+    <h3>{{ message }}</h3>
+    {% endfor %}
+</body>
+<script src="{% static 'register.js' %}"></script>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneytracker</title>
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link rel="stylesheet" href="{% static 'prf.css' %}">
+    <script src="{% static 'accounts.js' %}"></script>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label> 
+    <label class="logo">Moneytracker</label>
+    <ul>
+      <li><a href="friends">Friends</a></li>
+      <li><a href="transactions">transactions</a></li>
+      <li><a href="/">Accounts</a></li>
+      <li><a href="logout">Logout</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="prffff">
+    <div class="detlas">
+      <label class="nlable">Username:</label>
+      <input id="user_name" class="user_name" type="text" name="u_name" placeholder="Username" value="{{ pp.u_nm }}" disabled>
+      <label class="nlable">Budget:</label>
+      <input id="budgt" class="Email" type="text" name="mmail" placeholder="Budget" value="{{ pp.terimail }}" disabled>
+      <label class="nlable">Spent:</label>
+      <input id="spnd" class="Email" type="text" name="mmail" placeholder="Spent" value="{{ pp.terimail }}" disabled>
+    </div>
+</div>
+
+</body>
+
+</html> 

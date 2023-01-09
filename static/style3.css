@@ -1,0 +1,38 @@
+body{
+    background: rgb(236, 232, 232);
+}
+.sgn{
+    width: 45%;
+    margin: auto;
+    background: white;
+    border: 1.5px solid lightgreen;
+    margin-top: 20px;
+}
+.sgn input{
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+    width: 65%;
+    margin-left: 11%;
+}
+.sgn button{
+    height: 35px;
+    width: 25%;
+    font-size: 17px;
+    background: rgb(17, 129, 194);
+    color: white;
+    cursor: pointer;
+    margin-left: 37%;
+    margin-top: 8px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
